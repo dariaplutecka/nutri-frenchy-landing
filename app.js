@@ -7,6 +7,19 @@ const appStoreLink = document.getElementById("app-store-link");
 const langButtons = document.querySelectorAll("[data-lang]");
 const isArticlesIndex = window.location.pathname.replace(/\/$/, "") === "/articles";
 
+/** Bazowy URL API — z config.js; pusty = same-origin. */
+function apiBase() {
+  const raw = window.LANDING_CONFIG?.apiBaseUrl;
+  if (typeof raw !== "string") return "";
+  return raw.replace(/\/$/, "");
+}
+
+function apiUrl(path) {
+  const base = apiBase();
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `${base}${normalized}`;
+}
+
 let currentLang = "pl";
 
 function resolveInitialLang() {
@@ -86,6 +99,15 @@ function setMessage(text, type) {
   betaMessage.className = `form-message${type ? ` ${type}` : ""}`;
 }
 
+function formatApiError(detail) {
+  if (typeof detail === "string") return detail;
+  if (Array.isArray(detail)) {
+    return detail.map((item) => item?.msg || JSON.stringify(item)).join("; ");
+  }
+  if (detail && typeof detail === "object") return JSON.stringify(detail);
+  return "";
+}
+
 langButtons.forEach((button) => {
   button.addEventListener("click", () => setLang(button.dataset.lang));
 });
@@ -108,7 +130,7 @@ if (betaForm) {
     setMessage(t("form.saving"));
 
     try {
-      const response = await fetch("/api/beta/signup", {
+      const response = await fetch(apiUrl("/api/beta/signup"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -117,7 +139,7 @@ if (betaForm) {
       const payload = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        throw new Error(payload.detail || t("form.serverError"));
+        throw new Error(formatApiError(payload.detail) || t("form.serverError"));
       }
 
       const message = payload.already_registered ? t("form.successAgain") : t("form.success");
@@ -134,7 +156,7 @@ if (betaForm) {
 
 async function loadStoreLinks() {
   try {
-    const response = await fetch("/api/landing/config");
+    const response = await fetch(apiUrl("/api/landing/config"));
     if (!response.ok) return;
 
     const config = await response.json();
