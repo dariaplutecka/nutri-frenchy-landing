@@ -293,7 +293,7 @@ a {
 .hero-mascot {
   position: relative;
   z-index: 1;
-  width: min(210px, 46vw);
+  width: min(280px, 52vw);
   height: auto;
   animation: float 4s ease-in-out infinite;
 }
@@ -746,7 +746,8 @@ a {
 .footer-disclaimer,
 .footer-copy {
   margin: 0;
-  max-width: 720px;
+  width: 100%;
+  max-width: none;
   font-size: 13px;
   line-height: 1.6;
   color: var(--text-muted);

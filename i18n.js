@@ -24,7 +24,7 @@ window.LandingI18n = {
       intro:
         "Dlatego warto wiedzieć, co tak naprawdę ląduje w misce… to znaczy na talerzu. 🐾",
       lead:
-        "Jestem Frenchy. Ty jesz, ja analizuję. Ty opowiadasz o posiłku, ja sprawdzam, czy wszystko się zgadza. A jeśli czegoś brakuje, podpowiem, jak uzupełnić niedobory i lepiej zadbać o swój organizm.",
+        "Jestem Frenchy. Ty jesz, ja analizuję. Opisz posiłek słowami albo po prostu zrób mu zdjęcie, a ja sprawdzę, czy wszystko się zgadza. Jeśli czegoś brakuje, podpowiem, jak uzupełnić niedobory i lepiej o siebie zadbać.",
       ctaDownload: "Pobierz aplikację",
       ctaBeta: "Dołącz do rodziny",
     },
@@ -33,7 +33,7 @@ window.LandingI18n = {
       text: {
         title: "Mówisz po ludzku",
         body:
-          "Napisz „owsianka z bananem”, „pizza z salami, dwa kawałki” albo „kurczak z ryżem”. Nie musisz szukać produktów ani znać wartości odżywczych. Po prostu opowiedz mi, co zjadłeś.",
+          "Napisz „owsianka z bananem”, „pizza z salami, dwa kawałki” albo po prostu zrób zdjęcie talerza. Zero przeszukiwania baz i klikania przez listy produktów jak w innych aplikacjach. Po prostu opowiedz mi albo pokaż, co zjadłeś.",
       },
       vitamins: {
         title: "Witaminy i niedobory",
@@ -58,10 +58,10 @@ window.LandingI18n = {
       author: "- Frenchy, buldog od odżywiania",
     },
     articles: {
-      pageTitle: "Artykuły o odżywianiu - Nutri Frenchy",
+      pageTitle: "Wiedza, którą warto zjeść - Nutri Frenchy",
       pageDescription:
         "Artykuły Nutri Frenchy o makroskładnikach, witaminach, minerałach i zdrowych nawykach żywieniowych. Krótko, konkretnie i prostym językiem.",
-      title: "Artykuły o odżywianiu i zdrowych nawykach",
+      title: "Wiedza, którą warto zjeść",
       lead:
         "Krótko, konkretnie i bez dietetycznego żargonu. Wszystko po to, żeby łatwiej podejmować dobre decyzje na co dzień.",
       readMore: "Czytaj artykuł",
@@ -98,7 +98,7 @@ window.LandingI18n = {
     download: {
       title: "Pobierz aplikację",
       lead:
-        "Na początek jestem dostępny na iPhone'ach. Pobierz aplikację, opisz mi swój pierwszy posiłek, a ja pokażę Ci nie tylko kalorie, ale też makroskładniki, witaminy i minerały. Bez tabelek, za to prostym językiem.",
+        "Na początek jestem dostępny na iPhone'ach. Pobierz aplikację i opisz albo sfotografuj swój pierwszy posiłek — a ja pokażę Ci nie tylko kalorie, ale też makroskładniki, witaminy i minerały.",
       storeLabel: "Pobierz w",
     },
     footer: {
@@ -141,7 +141,7 @@ window.LandingI18n = {
       intro:
         "So it's worth knowing what actually lands in the bowl… I mean, on your plate. 🐾",
       lead:
-        "I'm Frenchy. You eat, I analyze. You tell me about your meal, I check whether everything adds up. If something's missing, I'll suggest how to fill the gaps and take better care of your body.",
+        "I'm Frenchy. You eat, I analyze. Describe your meal in words or simply snap a photo — I'll check whether everything adds up. If something's missing, I'll suggest how to fill the gaps and take better care of yourself.",
       ctaDownload: "Get the app",
       ctaBeta: "Join the family",
     },
@@ -150,7 +150,7 @@ window.LandingI18n = {
       text: {
         title: "Talk like a human",
         body:
-          "Write \"oatmeal with banana\", \"pepperoni pizza, two slices\", or \"chicken with rice\". No hunting for products or nutrition facts. Just tell me what you ate.",
+          "Write \"oatmeal with banana\", \"pepperoni pizza, two slices\", or simply snap a photo of your plate. No digging through databases or tapping through product lists like in other apps. Just tell me or show me what you ate.",
       },
       vitamins: {
         title: "Vitamins and gaps",
@@ -175,10 +175,10 @@ window.LandingI18n = {
       author: "- Frenchy, bulldog of nutrition",
     },
     articles: {
-      pageTitle: "Nutrition articles - Nutri Frenchy",
+      pageTitle: "Knowledge worth eating - Nutri Frenchy",
       pageDescription:
         "Nutri Frenchy articles on macros, vitamins, minerals, and healthy eating habits. Short, practical, and in plain language.",
-      title: "Articles on nutrition and healthy habits",
+      title: "Knowledge worth eating",
       lead:
         "Short, practical, and clear. Everything you need to make better day-to-day food decisions without the jargon.",
       readMore: "Read article",
@@ -215,7 +215,7 @@ window.LandingI18n = {
     download: {
       title: "Get the app",
       lead:
-        "For now I'm available on iPhones. Download the app, describe your first meal, and I'll show you not just calories but also macros, vitamins, and minerals. No spreadsheets - just plain language.",
+        "For now I'm available on iPhones. Download the app and describe or photograph your first meal — I'll show you not just calories but also macros, vitamins, and minerals.",
       storeLabel: "Download on the",
     },
     footer: {
