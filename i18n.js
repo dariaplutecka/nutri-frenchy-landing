@@ -24,7 +24,7 @@ window.LandingI18n = {
       intro:
         "Dlatego warto wiedzieć, co tak naprawdę ląduje w misce… to znaczy na talerzu. 🐾",
       lead:
-        "Jestem Frenchy. Ty jesz, ja analizuję. Opisz posiłek słowami albo po prostu zrób mu zdjęcie, a ja sprawdzę, czy wszystko się zgadza. Jeśli czegoś brakuje, podpowiem, jak uzupełnić niedobory i lepiej o siebie zadbać.",
+        "Jestem Frenchy. Ty jesz, ja analizuję. Opisz posiłek lub zrób zdjęcie, a ja sprawdzę jego wartość odżywczą. Jeśli w Twojej diecie brakuje witamin, minerałów lub innych kluczowych składników, od razu Ci to pokażę i podpowiem, jak je uzupełnić.",
       ctaDownload: "Pobierz aplikację",
       ctaBeta: "Dołącz do rodziny",
     },
@@ -141,7 +141,7 @@ window.LandingI18n = {
       intro:
         "So it's worth knowing what actually lands in the bowl… I mean, on your plate. 🐾",
       lead:
-        "I'm Frenchy. You eat, I analyze. Describe your meal in words or simply snap a photo — I'll check whether everything adds up. If something's missing, I'll suggest how to fill the gaps and take better care of yourself.",
+        "I'm Frenchy. You eat, I analyze. Describe your meal or take a photo, and I'll check its nutritional value. If your diet is missing vitamins, minerals, or other key nutrients, I'll show you right away and suggest how to fill the gaps.",
       ctaDownload: "Get the app",
       ctaBeta: "Join the family",
     },
