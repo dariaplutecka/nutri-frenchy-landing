@@ -293,7 +293,7 @@ a {
 .hero-mascot {
   position: relative;
   z-index: 1;
-  width: min(280px, 52vw);
+  width: min(260px, 48vw);
   height: auto;
   animation: float 4s ease-in-out infinite;
 }
