@@ -9,7 +9,7 @@ const messageInput = document.getElementById("contact-message");
 const statusEl = document.getElementById("contact-message-status");
 const submitBtn = document.getElementById("contact-submit");
 const imageInput = document.getElementById("contact-image-input");
-const imageEmpty = document.getElementById("contact-image-empty");
+const imageToolbar = document.getElementById("contact-image-toolbar");
 const imagePreview = document.getElementById("contact-image-preview");
 const imageThumb = document.getElementById("contact-image-thumb");
 const langButtons = document.querySelectorAll("[data-lang]");
@@ -48,6 +48,7 @@ function applyTranslations() {
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const text = t(node.dataset.i18n);
     if (node.tagName === "TEXTAREA" || node.tagName === "INPUT") return;
+    if (node.closest(".contact-icon-btn")) return;
     node.textContent = text;
   });
 
@@ -56,7 +57,9 @@ function applyTranslations() {
   });
 
   document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
-    node.setAttribute("aria-label", t(node.dataset.i18nAria));
+    const label = t(node.dataset.i18nAria);
+    node.setAttribute("aria-label", label);
+    node.setAttribute("title", label);
   });
 
   langButtons.forEach((button) => {
@@ -84,13 +87,13 @@ function clearImage() {
   selectedImage = null;
   if (imageInput) imageInput.value = "";
   if (imagePreview) imagePreview.hidden = true;
-  if (imageEmpty) imageEmpty.hidden = false;
+  if (imageToolbar) imageToolbar.hidden = false;
   if (imageThumb) imageThumb.removeAttribute("src");
 }
 
 function showImagePreview(file) {
   selectedImage = file;
-  if (imageEmpty) imageEmpty.hidden = true;
+  if (imageToolbar) imageToolbar.hidden = true;
   if (imagePreview) imagePreview.hidden = false;
   if (imageThumb) {
     imageThumb.src = URL.createObjectURL(file);

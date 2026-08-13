@@ -39,21 +39,39 @@ function applyLegalLang(lang) {
     node.textContent = t(lang, node.dataset.i18n);
   });
 
-  const homeLink = document.querySelector(".home-link");
-  if (homeLink) homeLink.href = homeHref(lang);
+  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+    node.setAttribute("aria-label", t(lang, node.dataset.i18nAria));
+  });
+
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    const isActive = button.dataset.lang === lang;
+    button.classList.toggle("lang-btn--active", isActive);
+    button.setAttribute("aria-pressed", isActive ? "true" : "false");
+  });
+
+  const brand = document.querySelector(".brand");
+  if (brand) brand.href = homeHref(lang);
+
+  const breadcrumbHome = document.querySelector(".legal-header .breadcrumb a");
+  if (breadcrumbHome) breadcrumbHome.href = homeHref(lang);
 
   const page = document.body.dataset.legalPage;
   if (page === "privacy") {
-    const title = `${t(lang, "legal.privacyTitle")} - Nutri Frenchy`;
-    document.title = title;
+    document.title = `${t(lang, "legal.privacyTitle")} - Nutri Frenchy`;
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", t(lang, "legal.privacyDescription"));
   } else if (page === "terms") {
-    const title = `${t(lang, "legal.termsTitle")} - Nutri Frenchy`;
-    document.title = title;
+    document.title = `${t(lang, "legal.termsTitle")} - Nutri Frenchy`;
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", t(lang, "legal.termsDescription"));
   }
+
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 }
+
+document.querySelectorAll("[data-lang]").forEach((button) => {
+  button.addEventListener("click", () => applyLegalLang(button.dataset.lang));
+});
 
 applyLegalLang(resolveInitialLang());
