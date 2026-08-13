@@ -22,9 +22,9 @@ window.LandingI18n = {
     hero: {
       title1: "Jesteś tym, co jesz.",
       intro:
-        "Dlatego warto wiedzieć, co tak naprawdę ląduje w misce… to znaczy na talerzu. 🐾",
+        "Twoje jedzenie mówi więcej, niż myślisz.",
       lead:
-        "Jestem Frenchy. Ty jesz, ja analizuję. Opisz posiłek lub zrób zdjęcie, a ja sprawdzę jego wartość odżywczą. Jeśli w Twojej diecie brakuje witamin, minerałów lub innych kluczowych składników, od razu Ci to pokażę i podpowiem, jak je uzupełnić.",
+        "Opisz posiłek albo zrób zdjęcie — Frenchy pokaże nie tylko co w nim jest, ale też jak Twoje nawyki żywieniowe wyglądają w czasie. Bo prawdziwa zmiana zaczyna się od zobaczenia wzorca, nie od liczenia kalorii.",
       ctaDownload: "Pobierz aplikację",
       ctaBeta: "Dołącz do rodziny",
     },

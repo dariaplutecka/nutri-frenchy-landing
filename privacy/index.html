@@ -8,6 +8,7 @@
     name="description"
     content="Polityka prywatności Nutri Frenchy (PL/EN). Publiczny dokument wymagany do publikacji aplikacji."
   />
+  <link rel="canonical" href="https://nutrifrenchy.org/privacy" />
   <style>
     :root {
       --brand: #1d6b4f;
@@ -99,7 +100,7 @@
   <main class="wrap">
     <div class="top">
       <a class="home-link" href="/">← Powrót do strony głównej</a>
-      <p class="stamp">Ostatnia aktualizacja / Last updated: 2026-06-11</p>
+      <p class="stamp">Ostatnia aktualizacja / Last updated: 2026-08-06</p>
     </div>
 
     <section class="card">
@@ -107,92 +108,106 @@
       <p class="lang-note">Poniżej znajduje się wersja polska oraz angielska tego samego dokumentu.</p>
 
       <h3>1. Administrator danych</h3>
-      <p>Administratorem danych osobowych przetwarzanych w aplikacji Nutri Frenchy jest operator Aplikacji (kontakt: adres e-mail podany w Aplikacji lub na stronie projektu).</p>
+      <p>Administratorem danych osobowych przetwarzanych w aplikacji Nutri Frenchy jest Daria Plutecka-Wątor („Operator").</p>
+      <p>Kontakt w sprawach ochrony danych: <a href="mailto:contact@nutrifrenchy.org">contact@nutrifrenchy.org</a></p>
+      <p>Szczegółowe zasady korzystania z Aplikacji określa <a href="/terms">Regulamin</a>.</p>
 
       <h3>2. Jakie dane zbieramy</h3>
       <ul>
-        <li>Adres e-mail i hasło (hash) - do utworzenia i zabezpieczenia konta.</li>
-        <li>Dane profilu: wiek, płeć, wzrost, waga, cel kaloryczny, preferowany tryb szacowania - do personalizacji aplikacji.</li>
-        <li>Wpisy posiłków: opisy tekstowe, wyniki analizy, daty logowania, oceny trafności.</li>
-        <li>Opcjonalnie: zdjęcie profilowe, zdjęcia etykiet produktów przesłane do analizy.</li>
-        <li>Dane techniczne niezbędne do działania usługi (np. wersja regulaminu zaakceptowana przy rejestracji).</li>
+        <li>Dane rejestracyjne: adres e-mail, hasło (zaszyfrowane).</li>
+        <li>Dane profilu: wiek, płeć, wzrost, waga, cel żywieniowy, preferowany tryb szacowania.</li>
+        <li>Treść wpisów: opisy posiłków, zdjęcia posiłków i etykiet, wyniki analizy, daty logowania, oceny trafności.</li>
+        <li>Opcjonalnie: zdjęcie profilowe.</li>
+        <li>Token urządzenia do powiadomień push — jeśli wyrazisz zgodę na ich otrzymywanie.</li>
+        <li>Dane analityczne, w tym nagrania sesji z zamaskowanymi polami tekstowymi i obrazami.</li>
+        <li>Dane diagnostyczne (raporty błędów) — bez treści posiłków, haseł ani adresów e-mail.</li>
       </ul>
 
       <h3>3. Cele i podstawy prawne</h3>
       <ul>
-        <li>Świadczenie usługi aplikacji (art. 6 ust. 1 lit. b RODO) - konto, dziennik posiłków, analiza żywieniowa.</li>
-        <li>Zgoda (art. 6 ust. 1 lit. a RODO) - w zakresie, w jakim jest wymagana (np. zdjęcia etykiet).</li>
-        <li>Prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO) - bezpieczeństwo, zapobieganie nadużyciom, rozwój produktu w formie zagregowanej.</li>
+        <li>Wykonanie umowy (art. 6 ust. 1 lit. b RODO) — konto, dziennik, analiza, eksport i usunięcie danych.</li>
+        <li>Zgoda (art. 6 ust. 1 lit. a RODO) — powiadomienia push i dane opcjonalne.</li>
+        <li>Prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO) — analityka, monitorowanie błędów, bezpieczeństwo.</li>
       </ul>
 
-      <h3>4. Odbiorcy danych</h3>
+      <h3>4. Podmioty przetwarzające</h3>
       <ul>
-        <li>OpenAI (OpenAI, L.L.C., USA) - opisy posiłków i zdjęcia etykiet w celu automatycznej analizy żywieniowej. Do OpenAI nie trafia Twój adres e-mail. Transfer poza EOG odbywa się na podstawie standardowych klauzul umownych.</li>
-        <li>USDA FoodData Central (opcjonalnie) - nazwy składników posiłków w celu wyszukania wartości odżywczych (bez danych identyfikujących użytkownika).</li>
-        <li>Dostawca hostingu bazy danych - przechowywanie konta i wpisów posiłków.</li>
+        <li><strong>OpenAI</strong> (USA) — analiza opisów posiłków i zdjęć. Bez adresu e-mail użytkownika. Transfer poza EOG: SCC.</li>
+        <li><strong>USDA FoodData Central</strong> — wyszukiwanie wartości odżywczych składników (bez danych identyfikujących).</li>
+        <li><strong>PostHog</strong> (hosting UE) — analityka i nagrania sesji z maskowaniem wrażliwych pól.</li>
+        <li><strong>Sentry</strong> — monitorowanie błędów aplikacji (bez domyślnego PII).</li>
+        <li><strong>Railway</strong> — hosting bazy danych i backendu.</li>
+        <li><strong>Resend</strong> — wiadomości e-mail transakcyjne.</li>
       </ul>
 
       <h3>5. Okres przechowywania</h3>
-      <p>Dane przechowujemy przez czas posiadania konta. Po usunięciu konta dane są trwale kasowane, o ile przepisy prawa nie wymagają dłuższego przechowywania.</p>
+      <p>Dane przechowujemy przez czas posiadania konta oraz — po usunięciu — przez okres wymagany przepisami prawa.</p>
 
       <h3>6. Twoje prawa</h3>
       <ul>
-        <li>Masz prawo dostępu, sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz sprzeciwu wobec przetwarzania.</li>
-        <li>W aplikacji: Profil -> Eksportuj moje dane (przenoszenie) oraz Profil -> Usuń konto (usunięcie).</li>
-        <li>Masz prawo wniesienia skargi do Prezesa UODO.</li>
+        <li>Dostęp, sprostowanie, usunięcie, ograniczenie, przenoszenie, sprzeciw wobec przetwarzania.</li>
+        <li>W aplikacji: Profil → Eksportuj moje dane; Profil → Usuń konto.</li>
+        <li>Skarga do Prezesa UODO lub właściwego organu nadzorczego.</li>
       </ul>
 
       <h3>7. Bezpieczeństwo</h3>
-      <p>Stosujemy środki techniczne i organizacyjne adekwatne do ryzyka (szyfrowane hasła, uwierzytelnianie tokenami, ograniczenie dostępu do serwerów).</p>
+      <p>Stosujemy szyfrowane hasła, uwierzytelnianie tokenami i ograniczony dostęp do serwerów. Dane nie są sprzedawane podmiotom trzecim.</p>
 
       <h3>8. Zmiany polityki</h3>
-      <p>Możemy aktualizować niniejszą politykę. O istotnych zmianach poinformujemy w Aplikacji. Data ostatniej aktualizacji jest widoczna na górze dokumentu.</p>
+      <p>Możemy aktualizować niniejszą politykę. O istotnych zmianach poinformujemy w Aplikacji.</p>
     </section>
 
     <section class="card">
       <h2>Privacy Policy (English)</h2>
 
       <h3>1. Data controller</h3>
-      <p>The controller of personal data processed in the Nutri Frenchy app is the App operator (contact: email address shown in the App or on the project website).</p>
+      <p>The controller is Daria Plutecka-Wątor (the "Operator").</p>
+      <p>Data protection contact: <a href="mailto:contact@nutrifrenchy.org">contact@nutrifrenchy.org</a></p>
+      <p>See our <a href="/terms">Terms of Use</a> for rules governing use of the App.</p>
 
       <h3>2. Data we collect</h3>
       <ul>
-        <li>Email address and password (hash) - to create and secure your account.</li>
-        <li>Profile data: age, sex, height, weight, calorie goal, preferred accuracy mode - to personalize the App.</li>
-        <li>Meal entries: text descriptions, analysis results, log dates, accuracy ratings.</li>
-        <li>Optional: profile photo, product label photos submitted for analysis.</li>
-        <li>Technical data required to operate the service (e.g. terms version accepted at registration).</li>
+        <li>Registration data: email, encrypted password.</li>
+        <li>Profile data: age, sex, height, weight, nutritional goal, accuracy mode.</li>
+        <li>Entry content: meal descriptions, photos, analysis results, log dates, ratings.</li>
+        <li>Optional: profile picture.</li>
+        <li>Push notification device token — if you consent.</li>
+        <li>Usage analytics, including session recordings with masked text fields and images.</li>
+        <li>Diagnostic data (error reports) — without meal content, passwords, or emails.</li>
       </ul>
 
       <h3>3. Purposes and legal bases</h3>
       <ul>
-        <li>Providing the App service (GDPR Art. 6(1)(b)) - account, meal diary, nutrition analysis.</li>
-        <li>Consent (GDPR Art. 6(1)(a)) - where required (e.g. label photos).</li>
-        <li>Legitimate interests (GDPR Art. 6(1)(f)) - security, abuse prevention, aggregated product improvement.</li>
+        <li>Contract (GDPR Art. 6(1)(b)) — account, diary, analysis, export, deletion.</li>
+        <li>Consent (GDPR Art. 6(1)(a)) — push notifications and optional data.</li>
+        <li>Legitimate interest (GDPR Art. 6(1)(f)) — analytics, error monitoring, security.</li>
       </ul>
 
-      <h3>4. Recipients</h3>
+      <h3>4. Processors</h3>
       <ul>
-        <li>OpenAI (OpenAI, L.L.C., USA) - meal descriptions and label images for automated nutrition analysis. Your email is not sent to OpenAI. Transfers outside the EEA rely on standard contractual clauses.</li>
-        <li>USDA FoodData Central (optional) - ingredient names to look up nutritional values (no user-identifying data).</li>
-        <li>Database hosting provider - storage of account and meal data.</li>
+        <li><strong>OpenAI</strong> (USA) — meal analysis. No user email. EEA transfers: SCC.</li>
+        <li><strong>USDA FoodData Central</strong> — ingredient lookups (no identifying data).</li>
+        <li><strong>PostHog</strong> (EU hosting) — analytics and masked session recordings.</li>
+        <li><strong>Sentry</strong> — error monitoring (no default PII).</li>
+        <li><strong>Railway</strong> — database and backend hosting.</li>
+        <li><strong>Resend</strong> — transactional email.</li>
       </ul>
 
       <h3>5. Retention</h3>
-      <p>We retain data for as long as you maintain an account. After account deletion, data is permanently erased unless law requires longer retention.</p>
+      <p>Data is retained while you maintain an account, and thereafter as required by law.</p>
 
       <h3>6. Your rights</h3>
       <ul>
-        <li>You have the right of access, rectification, erasure, restriction, portability, and to object to processing.</li>
-        <li>In the App: Profile -> Export my data (portability) and Profile -> Delete account (erasure).</li>
-        <li>You may lodge a complaint with your supervisory authority.</li>
+        <li>Access, rectification, erasure, restriction, portability, objection.</li>
+        <li>In the App: Profile → Export my data; Profile → Delete account.</li>
+        <li>Complaint to your supervisory authority.</li>
       </ul>
 
       <h3>7. Security</h3>
-      <p>We apply technical and organizational measures appropriate to the risk (hashed passwords, token authentication, restricted server access).</p>
+      <p>Hashed passwords, token auth, restricted server access. Data is not sold to third parties.</p>
 
       <h3>8. Changes</h3>
-      <p>We may update this policy. Material changes will be communicated in the App. The last updated date appears at the top of this document.</p>
+      <p>We may update this policy. Material changes will be communicated in the App.</p>
     </section>
   </main>
 </body>

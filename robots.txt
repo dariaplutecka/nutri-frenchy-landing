@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nutrifrenchy.app/sitemap.xml
+Sitemap: https://nutrifrenchy.org/sitemap.xml
