@@ -494,15 +494,19 @@ a {
   padding: 28px 0 64px;
 }
 
-.article-page .breadcrumb {
+.article-page .article-back {
   margin: 0 0 18px;
-  font-size: 14px;
-  color: var(--text-muted);
 }
 
-.article-page .breadcrumb a {
+.article-page .article-back a {
   color: var(--brand);
   font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.article-page .article-back a:hover {
+  text-decoration: underline;
 }
 
 .article-page .article-hero {
@@ -1092,21 +1096,6 @@ a {
 
 .legal-header {
   margin-bottom: 20px;
-}
-
-.legal-page .breadcrumb {
-  margin: 0 0 8px;
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-}
-
-.legal-page .breadcrumb a {
-  color: var(--brand);
-  text-decoration: none;
-}
-
-.legal-page .breadcrumb a:hover {
-  text-decoration: underline;
 }
 
 .legal-stamp {

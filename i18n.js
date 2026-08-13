@@ -67,6 +67,7 @@ window.LandingI18n = {
       lead:
         "Krótko, konkretnie i bez dietetycznego żargonu. Wszystko po to, żeby łatwiej podejmować dobre decyzje na co dzień.",
       readMore: "Czytaj artykuł",
+      backToList: "← Wróć do listy artykułów",
       relatedTitle: "Powiązane artykuły",
       item1: {
         kicker: "Podstawy",
@@ -229,6 +230,7 @@ window.LandingI18n = {
       lead:
         "Short, practical, and clear. Everything you need to make better day-to-day food decisions without the jargon.",
       readMore: "Read article",
+      backToList: "← Back to articles",
       relatedTitle: "Related articles",
       item1: {
         kicker: "Basics",

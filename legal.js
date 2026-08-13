@@ -52,9 +52,6 @@ function applyLegalLang(lang) {
   const brand = document.querySelector(".brand");
   if (brand) brand.href = homeHref(lang);
 
-  const breadcrumbHome = document.querySelector(".legal-header .breadcrumb a");
-  if (breadcrumbHome) breadcrumbHome.href = homeHref(lang);
-
   const page = document.body.dataset.legalPage;
   if (page === "privacy") {
     document.title = `${t(lang, "legal.privacyTitle")} - Nutri Frenchy`;
