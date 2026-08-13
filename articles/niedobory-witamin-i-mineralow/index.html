@@ -35,19 +35,31 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" aria-label="Nutri Frenchy - strona główna">
+      <a class="brand" href="/" data-i18n-aria="a11y.home" aria-label="Nutri Frenchy - strona główna">
         <img src="/assets/logo-wordmark.png" alt="Nutri Frenchy" class="brand-logo brand-logo--wordmark" width="586" height="244" />
       </a>
-      <nav class="header-nav" aria-label="Nawigacja">
-        <a href="/articles">Artykuły</a>
-        <a href="/#download" class="nav-cta">Pobierz</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="header-nav" data-i18n-aria="a11y.nav" aria-label="Nawigacja">
+          <a href="/articles" data-i18n="footer.articles">Artykuły</a>
+          <a href="/#download" class="nav-cta" data-i18n="nav.download">Pobierz</a>
+        </nav>
+        <div class="lang-switch" role="group" data-i18n-aria="a11y.langSwitch" aria-label="Wybierz język">
+          <button type="button" class="lang-btn lang-btn--active" data-lang="pl" aria-pressed="true">PL</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="article-page">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Strona główna</a> / <a href="/articles">Artykuły</a> / Niedobory</p>
+      <p class="breadcrumb">
+        <a href="/" data-i18n="nav.home">Strona główna</a>
+        <span aria-hidden="true"> / </span>
+        <a href="/articles" data-i18n="footer.articles">Artykuły</a>
+        <span aria-hidden="true"> / </span>
+        <span data-i18n="articles.item2.shortLabel">Niedobory</span>
+      </p>
       <header class="article-hero">
         <p class="article-kicker">Witaminy i minerały</p>
         <h1>Najczęstsze niedobory u kobiet i mężczyzn</h1>
@@ -85,14 +97,14 @@
 
       <div class="article-cta">
         <p>Chcesz wiedzieć, czy Twoje posiłki dają więcej niż same kalorie? Dołącz do rodziny Frenchy'ego i testuj analizę niedoborów.</p>
-        <a class="btn btn-primary" href="/#beta">Dołącz do rodziny</a>
+        <a class="btn btn-primary" href="/#beta" data-i18n="hero.ctaBeta">Dołącz do rodziny</a>
       </div>
 
       <aside class="article-related">
-        <h2>Powiązane artykuły</h2>
+        <h2 data-i18n="articles.relatedTitle">Powiązane artykuły</h2>
         <ul>
-          <li><a href="/articles/makroskladniki-bez-stresu">Makroskładniki bez stresu</a></li>
-          <li><a href="/articles/zdrowe-odzywianie-krok-po-kroku">Zdrowe odżywianie krok po kroku</a></li>
+          <li><a href="/articles/makroskladniki-bez-stresu" data-i18n="articles.item1.title">Makroskładniki bez stresu</a></li>
+          <li><a href="/articles/zdrowe-odzywianie-krok-po-kroku" data-i18n="articles.item3.title">Zdrowe odżywianie krok po kroku</a></li>
         </ul>
       </aside>
     </div>
@@ -100,10 +112,16 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy"><a class="footer-link" href="/terms">Regulamin</a> · <a class="footer-link" href="/privacy">Polityka prywatności</a></p>
+      <p class="footer-copy">
+        <a class="footer-link" href="/terms" data-i18n="footer.terms">Regulamin</a>
+        ·
+        <a class="footer-link" href="/privacy" data-i18n="footer.privacy">Polityka prywatności</a>
+      </p>
       <p class="footer-copy">© <span id="year"></span> Nutri Frenchy</p>
     </div>
   </footer>
-  <script>document.getElementById("year").textContent = String(new Date().getFullYear());</script>
+  <script src="/config.js"></script>
+  <script src="/i18n.js?v=15"></script>
+  <script src="/app.js?v=9"></script>
 </body>
 </html>

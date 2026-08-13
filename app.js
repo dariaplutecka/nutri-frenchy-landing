@@ -5,7 +5,9 @@ const betaForm = document.getElementById("beta-form");
 const betaMessage = document.getElementById("beta-message");
 const appStoreLink = document.getElementById("app-store-link");
 const langButtons = document.querySelectorAll("[data-lang]");
-const isArticlesIndex = window.location.pathname.replace(/\/$/, "") === "/articles";
+const pagePath = window.location.pathname.replace(/\/$/, "");
+const isArticlesIndex = pagePath === "/articles";
+const isArticleDetail = pagePath.startsWith("/articles/") && !isArticlesIndex;
 
 /** Bazowy URL API — z config.js; pusty = same-origin. */
 function apiBase() {
@@ -46,8 +48,16 @@ function t(key) {
 function applyTranslations() {
   document.documentElement.lang = currentLang;
 
-  const pageTitle = isArticlesIndex ? t("articles.pageTitle") : t("meta.title");
-  const pageDescription = isArticlesIndex ? t("articles.pageDescription") : t("meta.description");
+  const pageTitle = isArticlesIndex
+    ? t("articles.pageTitle")
+    : isArticleDetail
+      ? null
+      : t("meta.title");
+  const pageDescription = isArticlesIndex
+    ? t("articles.pageDescription")
+    : isArticleDetail
+      ? null
+      : t("meta.description");
 
   if (pageTitle) document.title = pageTitle;
 

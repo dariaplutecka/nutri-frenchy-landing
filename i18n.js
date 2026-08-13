@@ -11,8 +11,10 @@ window.LandingI18n = {
       langSwitch: "Wybierz język",
     },
     nav: {
+      home: "Strona główna",
       features: "Co potrafię",
       beta: "Dołącz do rodziny",
+      contact: "Kontakt",
       download: "Pobierz",
     },
     lang: {
@@ -65,20 +67,24 @@ window.LandingI18n = {
       lead:
         "Krótko, konkretnie i bez dietetycznego żargonu. Wszystko po to, żeby łatwiej podejmować dobre decyzje na co dzień.",
       readMore: "Czytaj artykuł",
+      relatedTitle: "Powiązane artykuły",
       item1: {
         kicker: "Podstawy",
+        shortLabel: "Makroskładniki",
         title: "Makroskładniki bez stresu - jak je czytać w praktyce",
         body:
           "Prosty przewodnik po białku, tłuszczach i węglowodanach: co jest ważne i jak przełożyć to na codzienne posiłki.",
       },
       item2: {
         kicker: "Witaminy i minerały",
+        shortLabel: "Niedobory",
         title: "Najczęstsze niedobory u kobiet i mężczyzn",
         body:
           "Na co zwracać uwagę, jakie sygnały obserwować i jak wspierać organizm jedzeniem, zanim pojawi się problem.",
       },
       item3: {
         kicker: "Nawyki",
+        shortLabel: "Nawyki",
         title: "Jak budować zdrowe odżywianie krok po kroku",
         body:
           "Bez rewolucji i bez wyrzutów sumienia - małe zmiany, które realnie działają i zostają na dłużej.",
@@ -105,7 +111,22 @@ window.LandingI18n = {
       disclaimer:
         "Nutri Frenchy nie jest urządzeniem medycznym ani narzędziem diagnostycznym. Szacunki kaloryczności i składu odżywczego mają charakter orientacyjny i nie zastępują porady lekarza ani dietetyka.",
       articles: "Artykuły",
+      contact: "Kontakt",
+      terms: "Regulamin",
+      privacy: "Polityka prywatności",
       copy: "Dbamy o Twoje zdrowie - z uśmiechem.",
+    },
+    legal: {
+      backHome: "← Powrót do strony głównej",
+      lastUpdated: "Ostatnia aktualizacja: 2026-08-06",
+      privacyTitle: "Polityka prywatności",
+      privacyDescription:
+        "Polityka prywatności aplikacji Nutri Frenchy. Informacje o przetwarzaniu danych osobowych.",
+      termsTitle: "Regulamin aplikacji Nutri Frenchy",
+      termsDescription:
+        "Regulamin korzystania z aplikacji Nutri Frenchy. Zasady usługi, subskrypcji i prywatności.",
+      termsLink: "Regulamin",
+      privacyLink: "Polityka prywatności",
     },
     form: {
       invalidEmail: "Podaj poprawny adres e-mail - buldogi też lubią dobrze sformatowane maile.",
@@ -114,6 +135,30 @@ window.LandingI18n = {
       successAgain: "Super - już jesteś na mojej liście! Wiercę tyłkiem z radości.",
       error: "Nie udało się zapisać. Spróbuj za chwilę.",
       serverError: "Coś poszło nie tak. Spróbuj za chwilę.",
+    },
+    contact: {
+      pageTitle: "Kontakt - Nutri Frenchy",
+      pageDescription:
+        "Napisz do Nutri Frenchy. Zgłoś problem, pomysł lub opinię — odpowiemy na contact@nutrifrenchy.org.",
+      title: "Kontakt",
+      subtitle: "Napisz do mnie",
+      mascotSpeech:
+        "Masz problem z aplikacją lub pomysł, jak ją ulepszyć?\nChętnie Cię wysłucham. Napisz przez formularz — każda opinia, zgłoszenie błędu i sugestia pomagają rozwijać aplikację.",
+      emailLabel: "Twój e-mail",
+      emailPlaceholder: "np. ty@example.com",
+      messagePlaceholder: "Opisz swój problem lub pomysł…",
+      addImage: "Dodaj zdjęcie",
+      changeImage: "Zmień zdjęcie",
+      removeImage: "Usuń",
+      send: "Wyślij wiadomość",
+      sending: "Wysyłam…",
+      success:
+        "Dziękuję! Twoja wiadomość dotarła do mnie. Postaram się odpowiedzieć jak najszybciej.",
+      errorEmpty: "Napisz wiadomość przed wysłaniem.",
+      errorEmail: "Podaj poprawny adres e-mail.",
+      errorImageFormat: "Dozwolone formaty zdjęć: JPG, PNG, WebP, GIF.",
+      errorImageSize: "Zdjęcie może mieć maksymalnie 5 MB.",
+      serverError: "Nie udało się wysłać wiadomości. Spróbuj za chwilę.",
     },
   },
   en: {
@@ -128,8 +173,10 @@ window.LandingI18n = {
       langSwitch: "Choose language",
     },
     nav: {
+      home: "Home",
       features: "What I do",
       beta: "Join the family",
+      contact: "Contact",
       download: "Download",
     },
     lang: {
@@ -172,7 +219,7 @@ window.LandingI18n = {
       title: "A word from Frenchy 🐾",
       text:
         "\"Calories are just the beginning. More than the number, I care whether you're giving your body everything it needs. Iron, magnesium, protein, vitamins - I keep an eye on that for you.\n\nBecause good nutrition isn't just about eating more or less. It's everyday care for yourself.\"",
-      author: "- Frenchy, bulldog of nutrition",
+      author: "- Frenchy, nutrition coach",
     },
     articles: {
       pageTitle: "Knowledge worth eating - Nutri Frenchy",
@@ -182,20 +229,24 @@ window.LandingI18n = {
       lead:
         "Short, practical, and clear. Everything you need to make better day-to-day food decisions without the jargon.",
       readMore: "Read article",
+      relatedTitle: "Related articles",
       item1: {
         kicker: "Basics",
+        shortLabel: "Macros",
         title: "Macros made simple - how to use them in real life",
         body:
           "A straightforward guide to protein, fats, and carbs: what matters most and how to apply it to your daily meals.",
       },
       item2: {
         kicker: "Vitamins & minerals",
+        shortLabel: "Nutrient gaps",
         title: "Common nutrient gaps in women and men",
         body:
           "What to watch for, which signs to notice, and how to support your body with food before issues build up.",
       },
       item3: {
         kicker: "Habits",
+        shortLabel: "Habits",
         title: "How to build healthier eating step by step",
         body:
           "No all-or-nothing plans - just small, realistic changes that actually stick for the long term.",
@@ -222,7 +273,22 @@ window.LandingI18n = {
       disclaimer:
         "Nutri Frenchy is not a medical device or diagnostic tool. Calorie and nutrient estimates are for informational purposes only and do not replace advice from a physician, dietitian, or other qualified professional.",
       articles: "Articles",
+      contact: "Contact",
+      terms: "Terms of Use",
+      privacy: "Privacy Policy",
       copy: "We've got your health covered - with a smile.",
+    },
+    legal: {
+      backHome: "← Back to home",
+      lastUpdated: "Last updated: 2026-08-06",
+      privacyTitle: "Privacy Policy",
+      privacyDescription:
+        "Nutri Frenchy Privacy Policy. How we collect, use, and protect your personal data.",
+      termsTitle: "Terms of Use",
+      termsDescription:
+        "Nutri Frenchy Terms of Use. Service rules, subscriptions, and privacy overview.",
+      termsLink: "Terms of Use",
+      privacyLink: "Privacy Policy",
     },
     form: {
       invalidEmail: "Enter a valid email - bulldogs appreciate good formatting too.",
@@ -231,6 +297,29 @@ window.LandingI18n = {
       successAgain: "You're already on my list - happy butt wiggle unlocked.",
       error: "Couldn't save your email. Try again in a moment.",
       serverError: "Something went wrong. Try again in a moment.",
+    },
+    contact: {
+      pageTitle: "Contact - Nutri Frenchy",
+      pageDescription:
+        "Contact Nutri Frenchy. Report a bug, share an idea, or send feedback — we reply from contact@nutrifrenchy.org.",
+      title: "Contact",
+      subtitle: "Write to me",
+      mascotSpeech:
+        "Have a problem with the app or an idea for improvement?\nI'd love to hear from you. Use the contact form — every bug report, suggestion and opinion helps make the app better.",
+      emailLabel: "Your email",
+      emailPlaceholder: "you@example.com",
+      messagePlaceholder: "Describe your problem or idea…",
+      addImage: "Add image",
+      changeImage: "Change image",
+      removeImage: "Remove",
+      send: "Send message",
+      sending: "Sending…",
+      success: "Thank you! Your message has been received. I'll get back to you as soon as possible.",
+      errorEmpty: "Please write a message before sending.",
+      errorEmail: "Enter a valid email address.",
+      errorImageFormat: "Allowed image formats: JPG, PNG, WebP, GIF.",
+      errorImageSize: "Image must be 5 MB or smaller.",
+      serverError: "Couldn't send your message. Try again in a moment.",
     },
   },
 };

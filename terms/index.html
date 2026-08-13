@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nutri Frenchy - Regulamin / Terms of Use</title>
+  <title>Nutri Frenchy - Regulamin</title>
   <meta
     name="description"
-    content="Regulamin aplikacji Nutri Frenchy (PL/EN). Publiczny dokument wymagany do publikacji aplikacji."
+    content="Regulamin korzystania z aplikacji Nutri Frenchy. Zasady usługi, subskrypcji i prywatności."
   />
   <style>
     :root {
@@ -93,18 +93,21 @@
       color: var(--muted);
       font-size: 14px;
     }
+
+    [hidden] {
+      display: none !important;
+    }
   </style>
 </head>
-<body>
+<body data-legal-page="terms">
   <main class="wrap">
     <div class="top">
-      <a class="home-link" href="/">← Powrót do strony głównej</a>
-      <p class="stamp">Ostatnia aktualizacja / Last updated: 2026-08-06</p>
+      <a class="home-link" href="/" data-i18n="legal.backHome">← Powrót do strony głównej</a>
+      <p class="stamp" data-i18n="legal.lastUpdated">Ostatnia aktualizacja: 2026-08-06</p>
     </div>
 
-    <section class="card">
-      <h1>Regulamin aplikacji Nutri Frenchy</h1>
-      <p class="lang-note">Poniżej znajduje się wersja polska oraz angielska tego samego dokumentu.</p>
+    <section class="card" data-lang-section="pl">
+      <h1 data-i18n="legal.termsTitle">Regulamin aplikacji Nutri Frenchy</h1>
 
       <h3>1. Postanowienia ogólne</h3>
       <p>1.1. Niniejszy regulamin („Regulamin&quot;) określa zasady korzystania z aplikacji mobilnej Nutri Frenchy („Aplikacja&quot;), świadczonej przez Darię Plutecką-Wątor („Operator&quot;).</p>
@@ -155,7 +158,7 @@
       <p>5.6. Użytkownik może samodzielnie wyeksportować wszystkie swoje dane (Profil → Eksportuj moje dane) oraz trwale usunąć konto wraz ze wszystkimi danymi (Profil → Usuń konto).</p>
       <p>5.7. Dane osobowe są przechowywane przez okres posiadania aktywnego konta w Aplikacji oraz przez okres wymagany przepisami prawa (np. przepisy podatkowe dotyczące dokumentacji transakcji) po jego usunięciu.</p>
       <p>5.8. Dane nie są sprzedawane podmiotom trzecim.</p>
-      <p>5.9. Szczegółowe informacje na temat przetwarzania danych osobowych znajdują się w Polityce Prywatności dostępnej pod adresem nutrifrenchy.org/privacy oraz w Aplikacji.</p>
+      <p>5.9. Szczegółowe informacje na temat przetwarzania danych osobowych znajdują się w Polityce Prywatności dostępnej pod adresem <a href="/privacy">nutrifrenchy.org/privacy</a> oraz w Aplikacji.</p>
       <h3>6. Odpowiedzialność</h3>
       <p>6.1. Operator dokłada należytej staranności, aby Aplikacja działała poprawnie i była dostępna w sposób nieprzerwany, jednak nie gwarantuje nieprzerwanego dostępu ani pełnej dokładności generowanych szacunków żywieniowych.</p>
       <p>6.2. Użytkownik korzysta z Aplikacji na własną odpowiedzialność. Operator nie ponosi odpowiedzialności za decyzje żywieniowe lub zdrowotne podjęte przez użytkownika na podstawie danych z Aplikacji.</p>
@@ -171,8 +174,8 @@
       <p>8.4. W sprawach związanych z Aplikacją i niniejszym Regulaminem skontaktuj się z Operatorem pod adresem: contact@nutrifrenchy.org</p>
     </section>
 
-    <section class="card">
-      <h2>Terms of Use (English)</h2>
+    <section class="card" data-lang-section="en" hidden>
+      <h1 data-i18n="legal.termsTitle">Terms of Use</h1>
 
       <h3>1. General Provisions</h3>
       <p>1.1. These Terms of Use (&quot;Terms&quot;) set out the rules for using the Nutri Frenchy mobile application (the &quot;App&quot;), provided by Daria Plutecka-Wątor (the &quot;Operator&quot;).</p>
@@ -223,7 +226,7 @@
       <p>5.6. Users may independently export all of their data (Profile → Export my data) and permanently delete their account along with all data (Profile → Delete my account).</p>
       <p>5.7. Personal data is retained for as long as the user maintains an active account in the App, and thereafter for the period required by applicable law (e.g., tax regulations regarding transaction records).</p>
       <p>5.8. Data is not sold to third parties.</p>
-      <p>5.9. Detailed information on the processing of personal data is available in the Privacy Policy at nutrifrenchy.org/privacy and within the App.</p>
+      <p>5.9. Detailed information on the processing of personal data is available in the Privacy Policy at <a href="/privacy">nutrifrenchy.org/privacy</a> and within the App.</p>
       <h3>6. Liability</h3>
       <p>6.1. The Operator exercises due diligence to ensure the App functions correctly and is available without interruption, but does not guarantee uninterrupted access or the complete accuracy of the nutritional estimates generated.</p>
       <p>6.2. Users use the App at their own risk. The Operator is not liable for nutritional or health-related decisions made by users based on data from the App.</p>
@@ -239,5 +242,7 @@
       <p>8.4. For matters related to the App and these Terms, please contact the Operator at: contact@nutrifrenchy.org</p>
     </section>
   </main>
+  <script src="/i18n.js?v=15"></script>
+  <script src="/legal.js"></script>
 </body>
 </html>
