@@ -3,7 +3,6 @@ document.getElementById("year").textContent = String(new Date().getFullYear());
 const STORAGE_KEY = "nutrifrenchy-landing-lang";
 const betaForm = document.getElementById("beta-form");
 const betaMessage = document.getElementById("beta-message");
-const appStoreLink = document.getElementById("app-store-link");
 const langButtons = document.querySelectorAll("[data-lang]");
 const pagePath = window.location.pathname.replace(/\/$/, "");
 const isArticlesIndex = pagePath === "/articles";
@@ -164,21 +163,4 @@ if (betaForm) {
   });
 }
 
-async function loadStoreLinks() {
-  try {
-    const response = await fetch(apiUrl("/api/landing/config"));
-    if (!response.ok) return;
-
-    const config = await response.json();
-
-    if (config.app_store_url && appStoreLink) {
-      appStoreLink.href = config.app_store_url;
-      appStoreLink.hidden = false;
-    }
-  } catch {
-    // Brak linku — przycisk zostaje ukryty do publikacji landera.
-  }
-}
-
 setLang(resolveInitialLang());
-loadStoreLinks();

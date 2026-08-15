@@ -13,8 +13,6 @@
         active = path === "/contact";
       } else if (key === "features") {
         active = path === "/" && window.location.hash === "#features";
-      } else if (key === "download") {
-        active = path === "/" && window.location.hash === "#download";
       }
 
       link.classList.toggle("nav-link--active", active);
@@ -28,4 +26,43 @@
 
   update();
   window.addEventListener("hashchange", update);
+})();
+
+/** Ustawia link App Store na wszystkich przyciskach „Pobierz”. */
+(function initStoreLinks() {
+  function apiBase() {
+    const raw = window.LANDING_CONFIG?.apiBaseUrl;
+    if (typeof raw !== "string") return "";
+    return raw.replace(/\/$/, "");
+  }
+
+  async function resolveAppStoreUrl() {
+    const fromConfig = window.LANDING_CONFIG?.appStoreUrl;
+    if (typeof fromConfig === "string" && fromConfig.trim()) {
+      return fromConfig.trim();
+    }
+
+    try {
+      const response = await fetch(`${apiBase()}/api/landing/config`);
+      if (!response.ok) return "";
+
+      const config = await response.json();
+      return typeof config.app_store_url === "string" ? config.app_store_url.trim() : "";
+    } catch {
+      return "";
+    }
+  }
+
+  function applyStoreUrl(url) {
+    document.querySelectorAll("[data-app-store-link]").forEach((link) => {
+      link.href = url;
+      link.hidden = false;
+      link.removeAttribute("hidden");
+      link.removeAttribute("aria-disabled");
+    });
+  }
+
+  void resolveAppStoreUrl().then((url) => {
+    if (url) applyStoreUrl(url);
+  });
 })();

@@ -71,7 +71,7 @@
           <a href="/articles" data-nav="articles" data-i18n="footer.articles">Artykuły</a>
           <a href="/contact" data-nav="contact" data-i18n="nav.contact">Kontakt</a>
           <a href="#beta" data-i18n="nav.beta" class="is-temporarily-hidden" hidden>Dołącz do rodziny</a>
-          <a href="#download" data-nav="download" class="nav-cta" data-i18n="nav.download">Pobierz</a>
+          <a href="#" data-app-store-link data-nav="download" class="nav-cta" data-i18n="nav.download" target="_blank" rel="noopener noreferrer">Pobierz</a>
         </nav>
         <div class="lang-switch" role="group" data-i18n-aria="a11y.langSwitch" aria-label="Wybierz język">
           <button type="button" class="lang-btn lang-btn--active" data-lang="pl" aria-pressed="true">PL</button>
@@ -93,7 +93,7 @@
             Opisz posiłek albo zrób zdjęcie — Frenchy pokaże nie tylko co w nim jest, ale też jak Twoje nawyki żywieniowe wyglądają w czasie. Bo prawdziwa zmiana zaczyna się od zobaczenia wzorca, nie od liczenia kalorii.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#download" data-i18n="hero.ctaDownload">Pobierz aplikację</a>
+            <a class="btn btn-primary" href="#" data-app-store-link data-i18n="hero.ctaDownload" target="_blank" rel="noopener noreferrer">Pobierz aplikację</a>
             <a class="btn btn-outline is-temporarily-hidden" href="#beta" data-i18n="hero.ctaBeta" hidden>Dołącz do rodziny</a>
           </div>
         </div>
@@ -216,7 +216,7 @@
           </p>
         </div>
         <div class="store-buttons">
-          <a id="app-store-link" class="store-btn store-btn--apple" href="#" target="_blank" rel="noopener noreferrer" hidden>
+          <a id="app-store-link" class="store-btn store-btn--apple" href="#" data-app-store-link target="_blank" rel="noopener noreferrer">
             <span class="store-btn-label" data-i18n="download.storeLabel">Pobierz w</span>
             <span class="store-btn-name">App Store</span>
           </a>
