@@ -30,6 +30,10 @@ window.LandingI18n = {
       ctaDownload: "Pobierz aplikację",
       ctaBeta: "Dołącz do rodziny",
     },
+    betaPromo: {
+      badge: "Wersja beta",
+      pitch: "Testuj już teraz za darmo — pełna wersja bez opłat do końca roku",
+    },
     features: {
       title: "Dlaczego warto mieć Frenchy'ego pod ręką? 🐾",
       text: {
@@ -193,6 +197,10 @@ window.LandingI18n = {
         "I'm Frenchy. You eat, I analyze. Describe your meal or take a photo, and I'll check its nutritional value. If your diet is missing vitamins, minerals, or other key nutrients, I'll show you right away and suggest how to fill the gaps.",
       ctaDownload: "Get the app",
       ctaBeta: "Join the family",
+    },
+    betaPromo: {
+      badge: "Beta",
+      pitch: "Try it free now — full access at no cost until the end of the year",
     },
     features: {
       title: "Why keep Frenchy close at hand? 🐾",

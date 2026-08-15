@@ -248,6 +248,41 @@ a {
   gap: 12px;
 }
 
+.beta-promo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.beta-promo--hero {
+  margin-top: 16px;
+  max-width: 36rem;
+}
+
+.beta-promo--download {
+  margin-bottom: 14px;
+}
+
+.beta-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand);
+  background: rgba(29, 107, 79, 0.1);
+  border: 1px solid rgba(29, 107, 79, 0.22);
+  flex-shrink: 0;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
