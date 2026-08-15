@@ -32,7 +32,7 @@ window.LandingI18n = {
     },
     betaPromo: {
       badge: "Wersja beta",
-      pitch: "Testuj już teraz za darmo - pełna wersja bez opłat przez 3 miesiące",
+      pitch: "Testuj już teraz za darmo - pełna wersja bez opłat",
     },
     features: {
       title: "Dlaczego warto mieć Frenchy'ego pod ręką? 🐾",
@@ -200,7 +200,7 @@ window.LandingI18n = {
     },
     betaPromo: {
       badge: "Beta",
-      pitch: "Try it free now - full access at no cost for 3 months",
+      pitch: "Try it free now - full access at no cost",
     },
     features: {
       title: "Why keep Frenchy close at hand? 🐾",
