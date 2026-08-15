@@ -26,13 +26,13 @@ window.LandingI18n = {
       intro:
         "Twoje jedzenie mówi więcej, niż myślisz.",
       lead:
-        "Opisz posiłek albo zrób zdjęcie — Frenchy pokaże nie tylko co w nim jest, ale też jak Twoje nawyki żywieniowe wyglądają w czasie. Bo prawdziwa zmiana zaczyna się od zobaczenia wzorca, nie od liczenia kalorii.",
+        "Opisz posiłek albo zrób zdjęcie - Frenchy pokaże nie tylko co w nim jest, ale też jak Twoje nawyki żywieniowe wyglądają w czasie. Bo prawdziwa zmiana zaczyna się od zobaczenia wzorca, nie od liczenia kalorii.",
       ctaDownload: "Pobierz aplikację",
       ctaBeta: "Dołącz do rodziny",
     },
     betaPromo: {
       badge: "Wersja beta",
-      pitch: "Testuj już teraz za darmo — pełna wersja bez opłat do końca roku",
+      pitch: "Testuj już teraz za darmo - pełna wersja bez opłat przez 3 miesiące",
     },
     features: {
       title: "Dlaczego warto mieć Frenchy'ego pod ręką? 🐾",
@@ -109,7 +109,7 @@ window.LandingI18n = {
     download: {
       title: "Pobierz aplikację",
       lead:
-        "Na początek jestem dostępny na iPhone'ach. Pobierz aplikację i opisz albo sfotografuj swój pierwszy posiłek — a ja pokażę Ci nie tylko kalorie, ale też makroskładniki, witaminy i minerały.",
+        "Na początek jestem dostępny na iPhone'ach. Pobierz aplikację i opisz albo sfotografuj swój pierwszy posiłek - a ja pokażę Ci nie tylko kalorie, ale też makroskładniki, witaminy i minerały.",
       storeLabel: "Pobierz w",
     },
     footer: {
@@ -144,11 +144,11 @@ window.LandingI18n = {
     contact: {
       pageTitle: "Kontakt - Nutri Frenchy",
       pageDescription:
-        "Napisz do Nutri Frenchy. Zgłoś problem, pomysł lub opinię — odpowiemy na contact@nutrifrenchy.org.",
+        "Napisz do Nutri Frenchy. Zgłoś problem, pomysł lub opinię - odpowiemy na contact@nutrifrenchy.org.",
       title: "Kontakt",
       subtitle: "Napisz do mnie",
       mascotSpeech:
-        "Masz problem z aplikacją lub pomysł, jak ją ulepszyć?\nChętnie Cię wysłucham. Napisz przez formularz — każda opinia, zgłoszenie błędu i sugestia pomagają rozwijać aplikację.",
+        "Masz problem z aplikacją lub pomysł, jak ją ulepszyć?\nChętnie Cię wysłucham. Napisz przez formularz - każda opinia, zgłoszenie błędu i sugestia pomagają rozwijać aplikację.",
       emailLabel: "Twój e-mail",
       emailPlaceholder: "np. ty@example.com",
       messageLabel: "Wiadomość",
@@ -200,7 +200,7 @@ window.LandingI18n = {
     },
     betaPromo: {
       badge: "Beta",
-      pitch: "Try it free now — full access at no cost until the end of the year",
+      pitch: "Try it free now - full access at no cost for 3 months",
     },
     features: {
       title: "Why keep Frenchy close at hand? 🐾",
@@ -277,7 +277,7 @@ window.LandingI18n = {
     download: {
       title: "Get the app",
       lead:
-        "For now I'm available on iPhones. Download the app and describe or photograph your first meal — I'll show you not just calories but also macros, vitamins, and minerals.",
+        "For now I'm available on iPhones. Download the app and describe or photograph your first meal - I'll show you not just calories but also macros, vitamins, and minerals.",
       storeLabel: "Download on the",
     },
     footer: {
@@ -312,11 +312,11 @@ window.LandingI18n = {
     contact: {
       pageTitle: "Contact - Nutri Frenchy",
       pageDescription:
-        "Contact Nutri Frenchy. Report a bug, share an idea, or send feedback — we reply from contact@nutrifrenchy.org.",
+        "Contact Nutri Frenchy. Report a bug, share an idea, or send feedback - we reply from contact@nutrifrenchy.org.",
       title: "Contact",
       subtitle: "Write to me",
       mascotSpeech:
-        "Have a problem with the app or an idea for improvement?\nI'd love to hear from you. Use the contact form — every bug report, suggestion and opinion helps make the app better.",
+        "Have a problem with the app or an idea for improvement?\nI'd love to hear from you. Use the contact form - every bug report, suggestion and opinion helps make the app better.",
       emailLabel: "Your email",
       emailPlaceholder: "you@example.com",
       messageLabel: "Message",

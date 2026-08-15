@@ -8,7 +8,7 @@ const pagePath = window.location.pathname.replace(/\/$/, "");
 const isArticlesIndex = pagePath === "/articles";
 const isArticleDetail = pagePath.startsWith("/articles/") && !isArticlesIndex;
 
-/** Bazowy URL API — z config.js; pusty = same-origin. */
+/** Bazowy URL API - z config.js; pusty = same-origin. */
 function apiBase() {
   const raw = window.LANDING_CONFIG?.apiBaseUrl;
   if (typeof raw !== "string") return "";
