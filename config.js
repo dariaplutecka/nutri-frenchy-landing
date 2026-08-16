@@ -12,6 +12,6 @@
  * Nie dodawaj końcowego slasha.
  */
 window.LANDING_CONFIG = {
-  apiBaseUrl: "",
+  apiBaseUrl: "https://heroic-simplicity-production.up.railway.app",
   appStoreUrl: "",
 };
