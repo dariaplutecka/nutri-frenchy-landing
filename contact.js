@@ -114,8 +114,13 @@ function validateImage(file) {
 
 function apiBase() {
   const raw = window.LANDING_CONFIG?.apiBaseUrl;
-  if (typeof raw !== "string") return "";
-  return raw.replace(/\/$/, "");
+  if (typeof raw === "string" && raw.trim()) {
+    return raw.replace(/\/$/, "");
+  }
+  if (location.hostname === "nutrifrenchy.org" || location.hostname === "www.nutrifrenchy.org") {
+    return "https://heroic-simplicity-production.up.railway.app";
+  }
+  return "";
 }
 
 function apiUrl(path) {
