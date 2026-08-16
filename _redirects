@@ -1,0 +1,2 @@
+# Proxy public API calls to Railway backend (lander is static on Cloudflare Pages).
+/api/*  https://heroic-simplicity-production.up.railway.app/api/:splat  200

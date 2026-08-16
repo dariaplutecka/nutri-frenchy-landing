@@ -2,8 +2,8 @@
  * Konfiguracja landera.
  *
  * apiBaseUrl:
- * - "" (puste) → to samo origin (lokalnie z FastAPI / reverse proxy)
- * - "https://api.example.com" → osobny backend (osobny hosting landera)
+ * - "" (puste) → to samo origin; na produkcji /api/* jest proxy do Railway (_redirects)
+ * - "https://heroic-simplicity-production.up.railway.app" → bezpośrednio backend
  *
  * appStoreUrl:
  * - link do aplikacji w App Store (np. https://apps.apple.com/app/id123456789)

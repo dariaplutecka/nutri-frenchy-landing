@@ -165,7 +165,11 @@ async function handleSubmit(event) {
       method: "POST",
       body,
     });
-    const payload = await response.json().catch(() => ({}));
+    let payload = {};
+    const contentType = response.headers.get("content-type") || "";
+    if (contentType.includes("application/json")) {
+      payload = await response.json().catch(() => ({}));
+    }
 
     if (!response.ok) {
       throw new Error(mapApiError(payload.detail) || t("contact.serverError"));
@@ -174,7 +178,11 @@ async function handleSubmit(event) {
     form.hidden = true;
     successPanel.hidden = false;
   } catch (error) {
-    setStatus(error.message || t("contact.serverError"), "error");
+    if (error instanceof TypeError) {
+      setStatus(t("contact.serverError"), "error");
+    } else {
+      setStatus(error.message || t("contact.serverError"), "error");
+    }
     submitBtn.disabled = false;
   }
 }
