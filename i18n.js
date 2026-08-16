@@ -169,9 +169,9 @@ window.LandingI18n = {
   },
   en: {
     meta: {
-      title: "Nutri Frenchy - Your bulldog for calories and nutrients",
+      title: "Nutri Frenchy - Your bulldog for calories and vitamins",
       description:
-        "Nutri Frenchy - track calories, macros, vitamins, and minerals in plain English. Log meals by text and spot nutrient gaps with Frenchy the bulldog.",
+        "Nutri Frenchy helps you track calories, macros, vitamins, and minerals. Log meals in plain language and spot nutrient gaps without the jargon.",
     },
     a11y: {
       home: "Nutri Frenchy - home",
@@ -191,103 +191,102 @@ window.LandingI18n = {
     },
     hero: {
       title1: "You are what you eat.",
-      intro:
-        "So it's worth knowing what actually lands in the bowl… I mean, on your plate. 🐾",
+      intro: "Your food tells you more than you think.",
       lead:
-        "I'm Frenchy. You eat, I analyze. Describe your meal or take a photo, and I'll check its nutritional value. If your diet is missing vitamins, minerals, or other key nutrients, I'll show you right away and suggest how to fill the gaps.",
-      ctaDownload: "Get the app",
+        "Describe a meal or snap a photo - Frenchy shows you not just what's in it, but how your eating habits look over time. Real change starts when you see the pattern, not when you count calories.",
+      ctaDownload: "Download the app",
       ctaBeta: "Join the family",
     },
     betaPromo: {
-      badge: "Beta",
-      pitch: "Try it free now - full access at no cost",
+      badge: "Beta version",
+      pitch: "Try it free now - full access, no charge",
     },
     features: {
       title: "Why keep Frenchy close at hand? 🐾",
       text: {
-        title: "Talk like a human",
+        title: "Just talk normally",
         body:
-          "Write \"oatmeal with banana\", \"pepperoni pizza, two slices\", or simply snap a photo of your plate. No digging through databases or tapping through product lists like in other apps. Just tell me or show me what you ate.",
+          "Write \"oatmeal with banana\", \"pepperoni pizza, two slices\", or just snap a photo of your plate. No digging through databases or tapping through endless product lists like in other apps. Tell me or show me what you ate - that's it.",
       },
       vitamins: {
         title: "Vitamins and gaps",
         body:
-          "It's not just calories. I check vitamins and minerals against your needs. If something's missing, I'll suggest easy ways to fill the gaps.",
+          "It's not just calories. I check vitamins and minerals against what your body needs. If something's missing, I'll suggest easy ways to fill the gap.",
       },
       modes: {
-        title: "I adapt to the situation",
+        title: "I fit the moment",
         body:
-          "Cooking at home? Eating out? Not sure of the portion? I adjust how I calculate to fit the moment and show you how much you can trust the estimate.",
+          "Cooking at home? Eating out? Not sure of the portion? I adjust how I estimate to match the situation and show you how much you can trust the numbers.",
       },
       learning: {
         title: "I learn your habits",
         body:
-          "The more we talk, the better I understand how you eat. That means my analysis gets sharper and more tailored to you.",
+          "The more we talk, the better I understand how you eat. That means my analysis gets sharper and more tailored to you over time.",
       },
     },
     quote: {
       title: "A word from Frenchy 🐾",
       text:
-        "\"Calories are just the beginning. More than the number, I care whether you're giving your body everything it needs. Iron, magnesium, protein, vitamins - I keep an eye on that for you.\n\nBecause good nutrition isn't just about eating more or less. It's everyday care for yourself.\"",
-      author: "- Frenchy, nutrition coach",
+        "\"Calories are just the beginning. More than the number, I care whether you're giving your body everything it needs. Iron, magnesium, protein, vitamins - I keep an eye on that for you.\n\nBecause eating well isn't just about eating more or less. It's everyday care for yourself.\"",
+      author: "- Frenchy, your nutrition bulldog",
     },
     articles: {
       pageTitle: "Knowledge worth eating - Nutri Frenchy",
       pageDescription:
-        "Nutri Frenchy articles on macros, vitamins, minerals, and healthy eating habits. Short, practical, and in plain language.",
+        "Nutri Frenchy articles on macros, vitamins, minerals, and healthy eating habits. Short, practical, plain language.",
       title: "Knowledge worth eating",
       lead:
-        "Short, practical, and clear. Everything you need to make better day-to-day food decisions without the jargon.",
-      readMore: "Read article",
+        "Short, clear, and no dietitian jargon. Everything you need to make better everyday food choices.",
+      readMore: "Read the article",
       backToList: "← Back to articles",
       relatedTitle: "Related articles",
       item1: {
         kicker: "Basics",
         shortLabel: "Macros",
-        title: "Macros made simple - how to use them in real life",
+        title: "Macros without the stress - how to read them in real life",
         body:
-          "A straightforward guide to protein, fats, and carbs: what matters most and how to apply it to your daily meals.",
+          "A simple guide to protein, fats, and carbs: what actually matters and how to apply it to everyday meals.",
       },
       item2: {
         kicker: "Vitamins & minerals",
-        shortLabel: "Nutrient gaps",
-        title: "Common nutrient gaps in women and men",
+        shortLabel: "Gaps",
+        title: "The most common gaps in women and men",
         body:
-          "What to watch for, which signs to notice, and how to support your body with food before issues build up.",
+          "What to watch for, which signs to notice, and how to support your body with food before problems show up.",
       },
       item3: {
         kicker: "Habits",
         shortLabel: "Habits",
-        title: "How to build healthier eating step by step",
+        title: "How to build healthier eating, step by step",
         body:
-          "No all-or-nothing plans - just small, realistic changes that actually stick for the long term.",
+          "No overhaul, no guilt - small changes that actually work and stick around for the long haul.",
       },
     },
     beta: {
-      title: "Become part of Frenchy's family 🐾",
+      title: "Join Frenchy's family 🐾",
       lead1:
-        "Help me grow Nutri Frenchy. In return for regular feedback, you'll get free, permanent access to the app and the chance to test every new feature before its official launch.",
+        "Help me grow Nutri Frenchy. In return for regular feedback, you get free, ongoing access to the app and a chance to try every new feature before it launches.",
       lead2:
-        "It's a small community of people co-creating Frenchy from the very start.",
+        "A small community of people who've been shaping Frenchy from the very start.",
       emailLabel: "Your email",
       emailPlaceholder: "you@example.com",
       submit: "Join the family",
-      note: "By signing up you agree to beta-related emails. Full terms live inside the app.",
+      note: "By signing up, you agree to be contacted about the beta. The rest of the terms are in the app.",
     },
     download: {
-      title: "Get the app",
+      title: "Download the app",
       lead:
-        "For now I'm available on iPhones. Download the app and describe or photograph your first meal - I'll show you not just calories but also macros, vitamins, and minerals.",
+        "For now I'm on iPhone. Download the app, describe or photograph your first meal - and I'll show you not just calories, but macros, vitamins, and minerals too.",
       storeLabel: "Download on the",
     },
     footer: {
       disclaimer:
-        "Nutri Frenchy is not a medical device or diagnostic tool. Calorie and nutrient estimates are for informational purposes only and do not replace advice from a physician, dietitian, or other qualified professional.",
+        "Nutri Frenchy is not a medical device or diagnostic tool. Calorie and nutrient estimates are approximate and do not replace advice from a doctor or dietitian.",
       articles: "Articles",
       contact: "Contact",
       terms: "Terms of Use",
       privacy: "Privacy Policy",
-      copy: "We've got your health covered - with a smile.",
+      copy: "We care about your health - with a smile.",
     },
     legal: {
       backHome: "← Back to home",
@@ -297,26 +296,26 @@ window.LandingI18n = {
         "Nutri Frenchy Privacy Policy. How we collect, use, and protect your personal data.",
       termsTitle: "Terms of Use",
       termsDescription:
-        "Nutri Frenchy Terms of Use. Service rules, subscriptions, and privacy overview.",
+        "Nutri Frenchy Terms of Use. Service rules, subscriptions, and privacy.",
       termsLink: "Terms of Use",
       privacyLink: "Privacy Policy",
     },
     form: {
       invalidEmail: "Enter a valid email - bulldogs appreciate good formatting too.",
       saving: "Adding you to the list…",
-      success: "You're on the beta list. Welcome aboard.",
-      successAgain: "You're already on my list - happy butt wiggle unlocked.",
+      success: "Thanks! You're on the beta tester list.",
+      successAgain: "You're already on my list - happy butt wiggle!",
       error: "Couldn't save your email. Try again in a moment.",
       serverError: "Something went wrong. Try again in a moment.",
     },
     contact: {
       pageTitle: "Contact - Nutri Frenchy",
       pageDescription:
-        "Contact Nutri Frenchy. Report a bug, share an idea, or send feedback - we reply from contact@nutrifrenchy.org.",
+        "Write to Nutri Frenchy. Report a bug, share an idea, or send feedback - we'll reply from contact@nutrifrenchy.org.",
       title: "Contact",
       subtitle: "Write to me",
       mascotSpeech:
-        "Have a problem with the app or an idea for improvement?\nI'd love to hear from you. Use the contact form - every bug report, suggestion and opinion helps make the app better.",
+        "Got a problem with the app or an idea for how to improve it?\nI'd love to hear from you. Use the contact form - every bug report, suggestion, and bit of feedback helps make the app better.",
       emailLabel: "Your email",
       emailPlaceholder: "you@example.com",
       messageLabel: "Message",
@@ -326,8 +325,9 @@ window.LandingI18n = {
       removeImage: "Remove",
       send: "Send message",
       sending: "Sending…",
-      success: "Thank you! Your message has been received. I'll get back to you as soon as possible.",
-      errorEmpty: "Please write a message before sending.",
+      success:
+        "Thank you! Your message reached me. I'll get back to you as soon as I can.",
+      errorEmpty: "Write a message before sending.",
       errorEmail: "Enter a valid email address.",
       errorImageFormat: "Allowed image formats: JPG, PNG, WebP, GIF.",
       errorImageSize: "Image must be 5 MB or smaller.",
