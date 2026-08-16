@@ -1,0 +1,6 @@
+name = "nutri-frenchy-landing"
+compatibility_date = "2026-08-16"
+
+[assets]
+directory = "."
+exclude = [".git/**", ".wrangler/**", "README.md", "wrangler.toml"]
